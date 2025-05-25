@@ -3,13 +3,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static Connection connection = null;
+    private static final String URL = "jdbc:mysql://localhost:3306/chess_game";
+    private static final String USER = "root";
+    private static final String PASSWORD = "your_password"; // Change this
 
-    public static Connection getConnection() throws SQLException, ClassNotFoundException {
-        if (connection == null || connection.isClosed()) {
-            Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:chess_game.db");
-        }
-        return connection;
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
+
