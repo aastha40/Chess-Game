@@ -1,26 +1,27 @@
-Java Console-Based Chess Game
-This is a simple console-based chess game in Java with basic movement rules for each piece. The game allows two players to enter their names, play against each other, and saves the winner's name and both players' names to a SQL database.
+# Java Console-Based Chess Game
 
+This is a simple **console-based chess game** in Java with basic movement rules for each piece.  
+The game allows two players to enter their names, play against each other, and saves the **winner's name**, **both players' names**, and **game number** to a **MySQL database**.
 
+---
 
-Features:
+## 🎮 Features
 
-*Two-player chess game.
-*Basic rules: pawn, rook, bishop, queen, knight, king movement
-*Valid move checks, turn-based play
-*Winner is declared when the opponent's king is captured
-*Game results (players, winner, game number) are saved to SQLit
+- ✅ Two-player chess game (e.g., Aastha vs Disha, Arnav vs Swati)
+- ✅ Basic rules: pawn, rook, bishop, queen, knight, king movement
+- ✅ Turn-based play with valid move checks
+- ✅ Winner declared when opponent's king is captured
+- ✅ Game results stored in MySQL (game number, players, winner)
 
+---
 
-
-Project Structure:
+## 📁 Project Structure
 
 ChessGame/
-├── DBConnection.java       # Handles SQLite DB connection
-├── GameScoreDAO.java       # Inserts and retrieves game scores
-├── TestDBConnection.java   # Tests the DB connection
-├── GameCode.java           # Main game logic (console-based)
-└── chess_game.db           # SQLite database file (created automatically)
+├── DBConnection.java # Handles MySQL DB connection
+├── GameScoreDAO.java # Inserts and retrieves game scores
+├── TestDBConnection.java # Tests the DB connection
+├── GameCode.java # Main game logic (console-based)
 
 
 
