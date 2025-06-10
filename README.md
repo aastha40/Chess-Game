@@ -6,7 +6,7 @@ This is a simple console-based chess game in Java that supports basic movement r
 
 🎮 Features
 
-✅ Two-player chess game (e.g., Aastha vs Disha, Arnav vs Swati)
+✅ Two-player chess game 
 ✅ Basic chess rules: Pawn, Rook, Bishop, Queen, Knight, King movement
 ✅ Turn-based play with valid move checks
 ✅ Checkmate detection added – game ends when a king is checkmated
@@ -25,7 +25,7 @@ ChessGame/
 └── README.md                # This file
 
 
----
+
 
 🛠️ How to Run
 
@@ -68,7 +68,3 @@ Make sure the MySQL JDBC driver is in your classpath:
 Example: -cp .:mysql-connector-java-8.0.xx.jar
 
 
-
----
-
-Let me know if you’d like to generate or update the SQL file or GameScoreDAO.java to support additional queries.
